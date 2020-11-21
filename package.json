@@ -1,0 +1,20 @@
+{
+  "name": "vulnerable-app-back-end-ldap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ldapjs": "^2.2.2",
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.6",
+    "routes": "^2.1.0"
+  }
+}
