@@ -44,6 +44,30 @@ var getUser = ({userName, password}) => {
   });
 }
 
+// app.post('/api/vulnerable/signup', async(request, respond, next) => {
+//   var {userName, password} = request.body;
+
+//   var entry = {
+//     cn: userName,
+//     sn: password,
+//     objectclass: 'inetOrgPerson'
+//   };
+
+//   client.add('ou=users,dc=partition1,dc=com', entry, function(err) {
+//     if (err) {
+//       console.log(err)
+//     }
+//     else {
+//       console.log('sssss')
+//       respond.send('success')
+//     }
+//   });
+// });
+
+// app.post('/api/vulnerable/delete/ldap', async(request, respond, next) => {
+
+// });
+
 app.post('/api/vulnerable/bad/ldap', async(request, respond, next) => {
   var {userName, password} = request.body;
 
